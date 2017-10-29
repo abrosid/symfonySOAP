@@ -1,6 +1,6 @@
 ## Requirements
 
-composer is installed
+composer is required
 
 ## Installation
 

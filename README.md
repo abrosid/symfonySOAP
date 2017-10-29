@@ -3,6 +3,8 @@
 
  - The `composer` is required.
 
+ - The `phpunit` is required.
+
  - City names must be separated by comma ` , `.
  
 For example:

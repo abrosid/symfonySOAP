@@ -2,7 +2,6 @@
     "require": {
         "symfony/console": "^3.3",
         "symfony/event-dispatcher": "^3.3",
-        "symfony/yaml": "^3.3",
         "tuscanicz/soap": "^4.4"
     },
     "autoload": {

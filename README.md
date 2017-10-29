@@ -62,18 +62,18 @@ Should display:
 
 Run all test:
 
-`phpunit -- tests`
+`phpunit tests`
 
 Run ReadMeCommand test:
 
-`phpunit -- tests\ReadMeCommandTest`
+`phpunit tests\ReadMeCommandTest`
 
 Run TownCommand test:
 
-`phpunit -- tests\TownCommandTest`
+`phpunit tests\TownCommandTest`
 
 Run ServiceProvider test:
 
-`phpunit -- tests\ServiceProviderTest`
+`phpunit tests\ServiceProviderTest`
 
 

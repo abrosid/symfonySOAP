@@ -1,6 +1,15 @@
 ## Requirements
 
-composer is required
+
+ - The `composer` is required.
+
+ - City names must be separated by comma ` , `.
+ 
+For example:
+`Little London, Conisholme` is recognized as two city names.
+`Little London, ` is recognized as one city name.
+
+
 
 ## Installation
 
@@ -15,20 +24,22 @@ Install dependencies using composer
 Go to project root directory:
 
 `cd symfonysoap`
+  
+
 
 ## Run
 
 Commamd list:
-#### php ukpostcodes.php list
+`php ukpostcodes.php list`
 
 Example of usage with 2 city (town) names:
-#### php ukpostcodes.php town:name Dalblair, Conisholme
+`php ukpostcodes.php town:name Dalblair, Conisholme`
 
 Example of usage with 3 city (town) names:
-#### php ukpostcodes.php town:name Little London, Dalblair, Conisholme'
+`php ukpostcodes.php town:name Little London, Dalblair, Conisholme'
 
 Example of usage with less city (town) names:
-#### php ukpostcodes.php town:name Little London
+`php ukpostcodes.php town:name Little London`
 
 `Required at least 2 or maximum 3 city (town) names: Little London (1)`
 

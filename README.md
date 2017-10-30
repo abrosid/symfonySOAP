@@ -36,7 +36,7 @@ Go to project root directory:
 
 `cd symfonysoap`
 
-Install dependencies using composer
+Install dependencies using composer:
 
 `composer install`
 

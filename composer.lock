@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e99b790e9410f1887259b82e72525eb1",
+    "content-hash": "2baae3554a77de219dcb1a3c6855662d",
     "packages": [
         {
             "name": "ass/xmlsecurity",

@@ -30,7 +30,7 @@ https://phpunit.de/manual/current/en/installation.html
 
 Clone the project from git: 
 
-`git clone ...`
+`git clone https://github.com/abrosid/symfonySOAP.git`
 
 Go to project root directory:
 

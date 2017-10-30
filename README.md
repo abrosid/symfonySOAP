@@ -32,13 +32,14 @@ Clone the project from git:
 
 `git clone ...`
 
+Go to project root directory:
+
+`cd symfonysoap`
+
 Install dependencies using composer
 
 `composer install`
 
-Go to project root directory:
-
-`cd symfonysoap`
 
 
 

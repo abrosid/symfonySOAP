@@ -1,21 +1,34 @@
-## Requirements
+## Summary
+
+A sample PHP standalone CLI app, which outputs UK postcodes (locations) by entering their names, separated by comma `,` into CLI as a argument. The application is able to search exactly for two or three cities at one. If a user enters one city or more than three, the application will display error message:
+
+`Required at least 2 or maximum 3 city (town) names: ...`
+
+UK postcodes (locations) are retrieved from the public SOAP web service: http://www.webservicex.net/uklocation.asmx?WSDL
+
+In this sample are used following list of components and packages:
+ - Symfony/Comsole component : https://symfony.com/doc/current/components/console.html
+ - Symfony/EventDispatcher: https://symfony.com/doc/current/components/event_dispatcher.html
+ - SOAP client package: https://github.com/tuscanicz/BeSimpleSoap
+
+Also this sample app includes `phpunit` test.
 
 
- - The `composer` is required.
+## Preinstalation requirements
 
- - The `phpunit` is required.
+Following php version and cli tools are required:
 
- - City names must be separated by comma ` , `.
+ - PHP 7.0 or greater : http://be2.php.net/downloads.php
  
-For example:
-`Little London, Conisholme` is recognized as two city names.
-`Little London, ` is recognized as one city name.
+ - `composer` Dependency Manager for PHP: https://getcomposer.org/download/
 
+Recommended to install `phpunit` testing framework for PHP ^7.0  globally :
+https://phpunit.de/manual/current/en/installation.html
 
 
 ## Installation
 
-Clone from git: 
+Clone the project from git: 
 
 `git clone ...`
 
@@ -26,14 +39,25 @@ Install dependencies using composer
 Go to project root directory:
 
 `cd symfonysoap`
-  
 
 
-## Run
 
-Commamd list:
+## How it works...
 
-`php ukpostcodes.php list`
+City (town) names wil be entered as a command argument and they are must be separated by comma `,`. 
+For example:
+`Little London, Conisholme` will be recognized as two city names.
+`Little London, ` will be recognized as one city name.
+
+Here are the list of avialable command: 
+
+ - `php ukpostcodes.php` - outputs readme text
+
+ - `php ukpostcodes.php list` - displays command list
+
+ - `php ukpostcodes.php help` - displays help and other instruktions
+
+ - `php ukpostcodes.php readme` - outputs readme text, `readme` is the default command.
 
 Example of usage with 2 city (town) names:
 
@@ -41,7 +65,7 @@ Example of usage with 2 city (town) names:
 
 Example of usage with 3 city (town) names:
 
-`php ukpostcodes.php town:name Little London, Dalblair, Conisholme'
+`php ukpostcodes.php town:name Little London, Dalblair, Conisholme`
 
 Example of usage with less city (town) names:
 
@@ -62,19 +86,21 @@ Should display:
 
 ## Tests
 
-Run all test:
+If the `phpunit` is included to the `$PATH`, i.e. is set as a system variable, the following commands runs tests.
+
+All testings:
 
 `phpunit tests`
 
-Run ReadMeCommand test:
+ReadMeCommand testing:
 
 `phpunit tests\ReadMeCommandTest`
 
-Run TownCommand test:
+TownCommand testing:
 
 `phpunit tests\TownCommandTest`
 
-Run ServiceProvider test:
+ServiceProvider testing:
 
 `phpunit tests\ServiceProviderTest`
 

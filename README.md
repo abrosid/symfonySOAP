@@ -1,6 +1,6 @@
-## Synopsis
+## Description
 
-A sample PHP standalone CLI app, which outputs UK postcodes (locations) by entering their names, separated by comma `,` into CLI as a argument. The application is able to search exactly for two or three cities at one. If a user enters one city or more than three, the application will display error message:
+This is an example of PHP standalone CLI app, which outputs UK postcodes (locations) by entering their names, separated by comma `,` into CLI as a argument. The application is able to search exactly for two or three cities at one. If a user enters one city or more than three, the application will display error message:
 
 `Required at least 2 or maximum 3 city (town) names: ...`
 

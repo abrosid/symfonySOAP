@@ -87,7 +87,7 @@ Should display:
 
 ## Tests
 
-If the `phpunit` is included to the `$PATH`, i.e. is set as a system variable, the following commands runs tests.
+If the `phpunit` is included to the `$PATH`, i.e. is set as a system variable, the following commands are for php unit testing.
 
 All testings:
 

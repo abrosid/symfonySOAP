@@ -1,4 +1,4 @@
-## Summary
+## Synopsis
 
 A sample PHP standalone CLI app, which outputs UK postcodes (locations) by entering their names, separated by comma `,` into CLI as a argument. The application is able to search exactly for two or three cities at one. If a user enters one city or more than three, the application will display error message:
 
@@ -14,7 +14,7 @@ In this sample are used following list of components and packages:
 Also this sample app includes `phpunit` test.
 
 
-## Preinstalation requirements
+## Prerequisites
 
 Following php version and cli tools are required:
 
@@ -39,8 +39,6 @@ Go to project root directory:
 Install dependencies using composer:
 
 `composer install`
-
-
 
 
 ## How it works...
@@ -85,7 +83,7 @@ Should display:
 `Required at least 2 or maximum 3 city (town) names: Little London, bla, bla, bla (4)`
 
 
-## Tests
+## Running tests
 
 If the `phpunit` is included to the `$PATH`, i.e. is set as a system variable, the following commands are avialable for unit testing.
 
@@ -104,5 +102,4 @@ TownCommand testing:
 ServiceProvider testing:
 
 `phpunit tests\ServiceProviderTest`
-
 
